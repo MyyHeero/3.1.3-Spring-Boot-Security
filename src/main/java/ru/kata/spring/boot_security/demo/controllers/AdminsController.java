@@ -11,7 +11,7 @@ import ru.kata.spring.boot_security.demo.service.UserService;
 @Controller
 public class AdminsController {
 
-    AdminService adminService;
+   private final AdminService adminService;
 
     @Autowired
     public AdminsController(AdminService userService) {
